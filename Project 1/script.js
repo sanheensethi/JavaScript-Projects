@@ -32,6 +32,7 @@ addbtn.addEventListener('click',function(e){
 	let notes = localStorage.getItem('notes');
 	if(notes == null){
 		notesObj = [];
+	}else{
 		notesObj = JSON.parse(notes);
 	}
 	addTxt.value = addTxt.value.replace(/(?:\r\n|\r|\n)/g,'<br>');
