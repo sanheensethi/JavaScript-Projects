@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Add Notes</title>
-	<link rel="stylesheet" href="../assets/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,19 +34,24 @@
 	<div class="card">
   		<div class="card-body">
     		<h5 class="card-title">Add A Note</h5>
-		    <div class="input-group">
-			  <span class="input-group-text">Note : </span>
-			  <textarea class="form-control" aria-label="With textarea" id="addtxt"></textarea>
-		</div>
+        <div class="input-group">
+          <span class="input-group-text">Title : </span>
+         <input type="text" class="form-control" id="title">
+    </div>
     <br>
-    <a href="javascript:void(0)" class="btn btn-primary" id="addbtn">Add Note</a>
+		    <div class="input-group">
+  			  <span class="input-group-text">Note : </span>
+  			  <textarea class="form-control" aria-label="With textarea" id="addtxt"></textarea>
+		    </div>
+    <br>
+    <a href="javascript:void(0)" class="btn btn-success" id="addbtn">Add Note</a>
   </div>
 </div>
 <hr>
 <h1>Your Notes</h1>
 <div id="notes" class="row container-fluid"></div>
 </div>
-	<script type="text/javascript" src="../assets/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
