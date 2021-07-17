@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Projects</title>
+	<link rel="stylesheet" href="assets/bootstrap.min.css">
+</head>
+<body>
+	<div class="jumbotron" style="background-color:#f78b54;color:#fff;padding:20px; ">
+		<h1 class="text-center">JavaScript Projects</h1>
+	</div>
+	<div class="container my-5" style="font-size: 25px" id="container"></div>
+	<div class="position-relative">
+		<div class="position-fixed text-center bottom-0 col col-12" style="color:#fff;background-color: #423d3a;font-size: 20px;padding:5px;">&copy 2021, Sanheen Sethi.</div>
+	</div>
+	<script type="text/javascript">
+		let dataTitle = [];
+		let dataLink = [];
+
+		dataTitle.push('Project 1 [Sticky Notes]');
+		dataLink.push('Project 1/index.html');
+
+		html = `<ul>`;
+		for(let i=0;i<dataTitle.length;i++){
+			html += `<li><a href="${dataLink[i]}">${dataTitle}</a></li>`;
+		}
+		document.getElementById('container').innerHTML = html+"</ul>";
+	</script>
+	<script type="text/javascript" src="assets/bootstrap.min.js"></script>
+</body>
+</html>
