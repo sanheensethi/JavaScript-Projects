@@ -26,8 +26,9 @@
 
 		html = `<ul>`;
 		for(let i=0;i<dataTitle.length;i++){
-			html += `<li><a href="${dataLink[i]}">${dataTitle}</a></li>`;
+			html += `<li><a href="${dataLink[i]}">${dataTitle[i]}</a></li>`;
 		}
+		alert(html);
 		document.getElementById('container').innerHTML = html+"</ul>";
 	</script>
 	<script type="text/javascript" src="assets/bootstrap.min.js"></script>
