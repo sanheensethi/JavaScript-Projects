@@ -2,10 +2,15 @@ apiData = [
 	{
 		email:'qysyikubifvliwuliz@bptfp.net',
 		api:'0f6a31b0c8cb49ac945318ba76d085e8'
+	},
+	{
+		email:'qldduydbsplvziidli@rffff.net',
+		api:'316881b3fa114297a8b4f7b6546c1e1b'
 	}
 ];
 country = `in`;
-baseURL = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiData[0].api}`;
+api = apiData[1].api;
+baseURL = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${api}`;
 let news = document.getElementById('news');
 let mainImg = document.getElementById('mainImg');
 let maini = document.getElementById('maini');
@@ -108,7 +113,7 @@ function searchkro(){
 	content.style.display="none";
 	spinner.style.display = 'block';
 	news.innerHTML = '';
-	let baseURL2 = `https://newsapi.org/v2/everything?q=${query}&sortBy=popularity&apiKey=${apiData[0].api}`;
+	let baseURL2 = `https://newsapi.org/v2/everything?q=${query}&sortBy=popularity&apiKey=${api}`;
 	let xhr = new XMLHttpRequest();
     xhr.open('GET',baseURL2,true);
 
