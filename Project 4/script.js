@@ -1,4 +1,5 @@
-baseURL = 'https://news-api-local.herokuapp.com/news/'
+// baseURL = 'https://news-api-local.herokuapp.com/news/'
+baseURL = 'https://script.google.com/macros/s/AKfycby6qeXKaB3VP2-6siDHGLSuiopg6PBEhB_XfN0tz0eoVEaZOaOeLtCBvSs74v46-bBtkw/exec?endpoint=news'
 let news = document.getElementById('news');
 let mainImg = document.getElementById('mainImg');
 let maini = document.getElementById('maini');
@@ -99,7 +100,8 @@ async function searchkro(){
 	content.style.display="none";
 	spinner.style.display = 'block';
 	news.innerHTML = '';
-	let baseURL2 = `https://news-api-local.herokuapp.com/news/search/${query}`;
+// 	let baseURL2 = `https://news-api-local.herokuapp.com/news/search/${query}`;
+	let baseURL2 = `https://script.google.com/macros/s/AKfycby6qeXKaB3VP2-6siDHGLSuiopg6PBEhB_XfN0tz0eoVEaZOaOeLtCBvSs74v46-bBtkw/exec?endpoint=search&query=${query}`
     let data = await fetch(baseURL2);
 	data = await data.json();
 	data = JSON.parse(data);
