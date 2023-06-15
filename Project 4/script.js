@@ -18,7 +18,7 @@ body();
 async function body(){
 	let data = await fetch(baseURL);
 	data = await data.json();
-	data = JSON.parse(data);
+// 	data = JSON.parse(data);
 	if(data.status == "ok"){
  		let html = ``;
  		let html2 = mainImg.innerHTML;
@@ -104,7 +104,7 @@ async function searchkro(){
 	let baseURL2 = `https://script.google.com/macros/s/AKfycby6qeXKaB3VP2-6siDHGLSuiopg6PBEhB_XfN0tz0eoVEaZOaOeLtCBvSs74v46-bBtkw/exec?endpoint=search&query=${query}`
     let data = await fetch(baseURL2);
 	data = await data.json();
-	data = JSON.parse(data);
+// 	data = JSON.parse(data);
  	if(data.status == "ok"){
  		let html = ``;
  		mainImg.innerHTML = '';
